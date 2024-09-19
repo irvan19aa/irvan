@@ -6,8 +6,7 @@ $(document).ready(function()
 
 	$(document.body).append(popbox);
 
-    if(['kikasyafii.', '.google.', 'bing.', 'yandex.', 'facebook.', 'pinterest.'].some(s => document.referrer.toLowerCase().includes(s)) || ['kikasyafii'. 'fb', 'facebook', 'pinterest', 'twitter',].some(s => navigator.userAgent.toLowerCase().includes(s)))
-    {
+    
 		$(window).scroll(function (event) {
 		    var scroll = $(window).scrollTop();
 		    if (scroll >= 200) {
@@ -15,7 +14,7 @@ $(document).ready(function()
 		    }
 		    console.log('scroll..');                    
 		});
-    }
+    
 
     $(document).on('click','.g_url',function(e)
     {
